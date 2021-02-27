@@ -126,12 +126,13 @@ function createDocPage(item) {
   // const docPath = path.join(__dirname, '../pages', dirname, `${fileBaseName}.md`)
   // const { content } = grayMatter(fs.readFileSync(docPath, 'utf8'))
   // const contents = marked.parse(content)
+  const extname = path.extname(item.filePath)
   const outputPath = path.join(
     __dirname,
     '..',
     DOCSET_NAME,
     'Contents/Resources/Documents',
-    item.filePath.replace('.md', '.html')
+    item.filePath.replace(extname, '.html')
   )
 
   const outputDir = path.dirname(outputPath)

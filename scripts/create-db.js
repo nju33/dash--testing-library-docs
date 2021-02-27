@@ -29,12 +29,6 @@ db.serialize(() => {
   items.filter(util.isGuide).forEach((item) => {
     stmt.run(item.data.title, 'Guide', item.filePath.replace('.md', '.html'))
   })
-  items.filter(util.isModule).forEach((item) => {
-    stmt.run(item.data.title, 'Module', item.filePath.replace('.md', '.html'))
-  })
-  items.filter(util.isTag).forEach((item) => {
-    stmt.run(item.data.title, 'Tag', item.filePath.replace('.md', '.html'))
-  })
   stmt.finalize()
 })
 

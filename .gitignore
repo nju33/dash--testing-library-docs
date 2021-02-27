@@ -1,3 +1,5 @@
+testing-library.docset/**/*.html
+testing-library.docset/**/*.dsidx
 .idea
 .DS_Store
 

@@ -1,1 +1,1 @@
-exports.DOCSET_NAME = 'constants.docset'
+exports.DOCSET_NAME = 'testing-library.docset'
